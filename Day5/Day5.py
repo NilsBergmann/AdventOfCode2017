@@ -25,10 +25,10 @@ def solve2(arr):
         stepCount += 1
     print(stepCount)
     
-
+from copy import deepcopy 
 _input = open("Day5/Input.txt", "r")
 arr = []
 for line in _input:
     arr.append(int(line))
-solve1(arr)
-solve2(arr)
+solve1(deepcopy(arr))
+solve2(deepcopy(arr))
